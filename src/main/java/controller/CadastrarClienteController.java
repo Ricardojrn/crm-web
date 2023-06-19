@@ -61,7 +61,7 @@ public class CadastrarClienteController extends HttpServlet {
 			RequestDispatcher dispatcher = request.getRequestDispatcher("listar.jsp");
 			dispatcher.forward(request, response);
 		} else{
-			mensagem = "Por favor, preencher todos o campo!";
+			mensagem = "Por favor, preencher todos os campos!";
 			request.setAttribute("mensagem", mensagem);
 			
 			RequestDispatcher dispatcher = request.getRequestDispatcher("form.jsp");
